@@ -265,7 +265,7 @@ img.center {
 /* Typography */
 
 body, h1, h2, h3, h4, h5, h6, p { 
-  color: #222222;
+  color: #503667;
   display: block; 
   font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: normal; 
@@ -296,20 +296,20 @@ small {
 }
 
 a {
-  color: #2ba6cb; 
-  text-decoration: none !important;
+  color: #9e6eb0; 
+  text-decoration: underline;
 }
 
 a:hover { 
-  color: #2795b6 !important;
+  color: #503667 !important;
 }
 
 a:active { 
-  color: #2795b6 !important;
+  color: #9e6eb0 !important;
 }
 
 a:visited { 
-  color: #2ba6cb !important;
+  color: #9e6eb0 !important;
 }
 
 h1 a, 
@@ -439,12 +439,12 @@ td.panel {
 }
 
 .success table td {
-  background: #5da423;
-  border-color: #457a1a;
+  background: #503667;
+  border-color: #9e6eb0;
 }
 
 .success:hover table td {
-  background: #457a1a !important;
+  background: #6a9840 !important;
 }
 
 .alert table td {
