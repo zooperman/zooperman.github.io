@@ -4,52 +4,82 @@
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
 
 .container {
     text-align: center;
 }
 
 .cert {
-    background: url(../img/cert-bg.jpg) no-repeat top center; 
-    background-size: 100%;
-    height: 800px;
-    padding: 150px;
+    background: url(/img/cert-bg.jpg) center center no-repeat; 
+    background-size: cover;
+    padding: 35px;
+    border-radius: 50px;
+    -webkit-border-radius: 30px;
 
 }
 
 .cert h1, .cert h2 {
-    font-family: 'Lora', serif;
-    color: #74378C;
+    font-family: 'Oswald', sans-serif;
+    color: #74368C;
 }
 
 .cert h1{
-    font-size: 80px;
+    font-size: 50px;
     text-transform: uppercase;
-
 }
 
 .name {
-    font-family: 'Handlee', cursive;
-    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
     width: 75%;
     margin: 50px auto;
-    color: #000;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: #74378C;
+    padding: 15px;
 }
 
 
 .congrats {
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    padding: 0px 50px;
-    color:#323232;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #393939;
+    line-height: 45px;
 
 }
 
-.sig
+.txt {
+    font-size: 22px;
+    color: #252525;
+    line-height: 28px;
+    text-align: left;
+}
+
+.txt a { color: #74368C; border-bottom: 2px solid #74368C;}
+
+.txt a:hover { color: #3E2551; text-decoration: none; border-bottom: 1px dotted #3E2551; }
+
+
+.fighting-ext {
+    position: absolute;
+    top: -42px;
+    right: -28px;
+
+}
+
+.sig {
+    position: absolute;
+    top: 68px;
+    right: 130px;
+}
 
 .share {
+    margin-top: 50px;
     width: 100%;
-    margin: 0 auto;
 }
 
 .share a {

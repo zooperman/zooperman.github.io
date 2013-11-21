@@ -21,8 +21,8 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 
 
     </head>
@@ -37,23 +37,34 @@
       <div class="cert">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-xs-12">
-          <h1>Certificate</h1>
-          <h2>Gorilla Phone Challenge</h2>
-
+        <div class="col-xs-8">
+          <h1>Gorilla Phone Challenge</h1>
+          <p class="congrats">Congratulations Extinction Fighter</p>
           <p class="name"><?php echo $_GET["n"];?> &ldquo;<?php echo $_GET["s"];?>&rdquo;</p>
 
-          <p class="congrats">Congratulations Extinction Fighter!
-          You found <?php echo $_GET["p"];?> phones in the Gorilla Phone Challenge! 
-          Every phone you recycle helps us Fight Extinction and save wild gorillas!</p>
-          
-          <div class="sig"> 
-            <img src="img/sig.jpg" width="150" height="70">
-          </div>
+          <p class="txt">Congratulations Extinction Fighter! You found <?php echo $_GET["p"];?> phones in the Gorilla Phone Challenge! Now you're ready to find phones at home and send them to the Zoo using the  <a href="http://zoo.org.au/sites/default/files/TCOY_ReplyPaidLabel_1.pdf" target="_blank">They're Calling on You satchels</a>.</p>
+          <p class="txt">Every phone you recycle helps us Fight Extinction and save wild gorillas!</p>
+
+        </div>
+        <div class="col-xs-4">
+            <div class="fighting-ext">
+            <img src="img/fighting-ext.png">
+            </div>
+
+
+            <div class="sig"> 
+            <img src="img/zooperman.png">
+            </div>
 
         </div>  
       </div>
       </div>
+
+
+
+
+
+
 
       <div class="share">
             <script type="text/javascript">
