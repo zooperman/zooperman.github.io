@@ -6,11 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Gorilla Phone Challenge Certificate</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <style>
             body {
                 padding-top: 50px;
@@ -24,6 +24,7 @@
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 
+      <meta property="og:image" content=""/>
 
     </head>
     <body>
@@ -68,14 +69,16 @@
 
       <div class="share">
             <script type="text/javascript">
-                var fbshare = "https://www.facebook.com/sharer/sharer.php?u=" + window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
-                  document.write('<a href="' + fbshare + '" type="button" class="btn btn-default btn-lg" target="_blank"> <i class="fa fa-facebook"></i> Share</a>');
+            var completeurl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
+            completeurl = encodeURIComponent(completeurl);
+            var fbshare = "https://www.facebook.com/sharer/sharer.php?u=" + completeurl;
+            document.write('<a href="' + fbshare + '" type="button" class="btn btn-default btn-lg" target="_blank"> <i class="fa fa-facebook"></i> Share</a>');
             </script> 
 
 
             <script type="text/javascript">
-                var twshare = "https://twitter.com/share?url=" + window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
-                  document.write('<a href="' + twshare + '" type="button" class="btn btn-default btn-lg" target="_blank"> <i class="fa fa-twitter"></i> Tweet</a>');
+            var twshare = "https://twitter.com/share?url=" + completeurl;
+            document.write('<a href="' + twshare + '" type="button" class="btn btn-default btn-lg" target="_blank"> <i class="fa fa-twitter"></i> Tweet</a>');
             </script> 
 
 
