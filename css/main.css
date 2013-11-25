@@ -68,12 +68,11 @@ body {
     position: absolute;
     top: -42px;
     right: -28px;
-
 }
 
 .sig {
     position: absolute;
-    top: 68px;
+    top: 43px;
     right: 130px;
 }
 
@@ -88,7 +87,57 @@ body {
 
 
 
+/* Large desktop */
+@media (min-width: 1200px) { 
 
+}
+
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    .sig {
+        position: absolute;
+        top: 100px;
+        right: 28px;
+    }
+
+
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .sig {
+        position: absolute;
+        top: 249px;
+        right: 28px;
+    }
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .sig {
+        display:none;
+    }
+    .fighting-ext {
+    position: absolute;
+    top: -392px;
+    right: -28px;
+}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .sig {
+        display:none;
+    }
+    .fighting-ext {
+    position: absolute;
+    top: -552px;
+    right: -28px;
+}
+}
 
 
 

@@ -37,7 +37,7 @@
       <div class="cert">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-xs-8">
+        <div class="col-sm-8">
           <h1>Gorilla Phone Challenge</h1>
           <p class="congrats">Congratulations Extinction Fighter</p>
           <p class="name"><?php echo $_GET["n"];?> &ldquo;<?php echo $_GET["s"];?>&rdquo;</p>
@@ -46,14 +46,14 @@
           <p class="txt">Every phone you recycle helps us Fight Extinction and save wild gorillas!</p>
 
         </div>
-        <div class="col-xs-4">
+        <div class="col-sm-4">
             <div class="fighting-ext">
             <img src="img/fighting-ext.png">
             </div>
 
 
             <div class="sig"> 
-            <img src="img/zooperman.png">
+            <img src="img/zooperman.png" class="img-responsive">
             </div>
 
         </div>  
