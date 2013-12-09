@@ -33,7 +33,23 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
+<script>
 
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+
+
+</script>
 
     <div class="container">
       <div class="cert">
@@ -42,9 +58,9 @@
         <div class="col-sm-8">
           <h1>Gorilla Phone Challenge</h1>
           <p class="congrats">Congratulations Extinction Fighter</p>
-          <p class="name"><?php echo $_GET["n"];?> &ldquo;<?php echo $_GET["s"];?>&rdquo;</p>
+          <p class="name"><script>document.write(urlParams["n"])</script> &ldquo;<script>document.write(urlParams["s"])</script>&rdquo;</p>
 
-          <p class="txt">Congratulations Extinction Fighter! You found <?php echo $_GET["p"];?> phones in the Gorilla Phone Challenge! Now you're ready to find phones at home and send them to the Zoo using the  <a href="http://zoo.org.au/sites/default/files/TCOY_ReplyPaidLabel_1.pdf" target="_blank">They're Calling on You satchels</a>.</p>
+          <p class="txt">Congratulations Extinction Fighter! You found <script>document.write(urlParams["p"])</script> phones in the Gorilla Phone Challenge! Now you're ready to find phones at home and send them to the Zoo using the  <a href="http://zoo.org.au/sites/default/files/TCOY_ReplyPaidLabel_1.pdf" target="_blank">They're Calling on You satchels</a>.</p>
           <p class="txt">Every phone you recycle helps us Fight Extinction and save wild gorillas!</p>
 
         </div>
@@ -84,6 +100,11 @@
 
 
 
+
+<script>document.write(urlParams["n"])</script>
+
+
+
           <a href="javascript:window.print()" type="button" class="btn btn-default btn-lg">
           <i class="fa fa-print"></i> Print
           </a>
@@ -91,7 +112,7 @@
       </div>
 
 
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    </div> <!-- /container -->        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
